@@ -33,6 +33,21 @@ You'll also need an agent to speak with. Try our [Voice AI Quickstart](https://d
 > [!NOTE]
 > If you need to modify the LiveKit project credentials used, you can edit `.env.local` (copy from `.env.example` if you don't have one) to suit your needs.
 
+## Password Protection
+
+This application includes password protection to restrict access to authorized users. To set up the password:
+
+1. Create or edit your `.env.local` file and add:
+   ```
+   APP_PASSWORD=your_secure_password
+   ```
+
+2. Replace `your_secure_password` with a strong password of your choice.
+
+3. Restart the application for the changes to take effect.
+
+When users visit the application, they will be redirected to a login page where they must enter the correct password to access the app.
+
 ## Contributing
 
 This template is open source and we welcome contributions! Please open a PR or issue through GitHub, and don't forget to join us in the [LiveKit Community Slack](https://livekit.io/join-slack)!
